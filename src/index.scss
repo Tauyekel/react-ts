@@ -1,0 +1,54 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid black;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-card {
+  background-color: rgba(0, 123, 255, 0.25);
+  border: 2px solid #000080;
+  border-radius: 1rem;
+}
+
+.custom-badge {
+  font-size: 70%;
+}
+
+.custom-navbar-brand {
+  font-size: .8rem;
+}
+
+@media (max-width: 375px) {
+  .widthMap {
+    width: 345px;
+    height: 258px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .widthMap {
+    width: 1110px;
+    height: 832px;
+  }
+}
